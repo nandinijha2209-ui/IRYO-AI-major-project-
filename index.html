@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="IRYO AI — Smart IoT Health Monitoring Platform">
+<title>IRYO AI — Smart Health Monitoring</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="noise"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<header class="header">
+  <a href="#home" class="logo"><span class="logo-icon">✦</span><span>IRYO <b>AI</b></span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#how">How It Works</a>
+    <a href="#technology">Technology</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#about">About</a>
+  </nav>
+  <a href="#download" class="header-cta">Get IRYO AI <span>↗</span></a>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content reveal">
+    <div class="pill"><span class="live-dot"></span> IoT + AI SMART HEALTH PLATFORM</div>
+    <h1>Health monitoring,<br><em>reimagined.</em></h1>
+    <p>IRYO AI connects smart sensors, secure digital records and intelligent insights into one simple health-monitoring experience.</p>
+    <div class="hero-buttons">
+      <a href="#download" class="btn primary">Explore IRYO AI <span>→</span></a>
+      <a href="#how" class="btn ghost"><span class="play">▶</span> See how it works</a>
+    </div>
+    <div class="mini-trust">
+      <span>✓ Real-time readings</span><span>✓ Digital history</span><span>✓ Smart recommendations</span>
+    </div>
+  </div>
+
+  <div class="hero-device reveal delay">
+    <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+    <div class="device-card">
+      <div class="device-head"><span>IRYO AI MONITOR</span><b><i></i> CONNECTED</b></div>
+      <div class="device-screen">
+        <div class="scan-title">HEALTH SCAN</div>
+        <div class="scan-circle"><div><small>SESSION</small><strong>92%</strong><span>Complete</span></div></div>
+        <div class="live-reading"><span>● LIVE SENSOR DATA</span><small>Updated just now</small></div>
+        <div class="readings">
+          <div><strong>76</strong><small>♥ BPM</small><label>Heart Rate</label></div>
+          <div><strong>98</strong><small>◉ %</small><label>SpO₂</label></div>
+          <div><strong>36.7</strong><small>°C</small><label>Temperature</label></div>
+          <div><strong>168</strong><small>cm</small><label>Height</label></div>
+        </div>
+        <div class="ai-insight"><span>✦</span><div><b>AI Insight</b><small>Review your readings and monitor your health trends regularly.</small></div><span class="arrow">→</span></div>
+      </div>
+    </div>
+    <div class="floating-card fc-one"><span>⚡</span><div><b>ESP32</b><small>Device online</small></div></div>
+    <div class="floating-card fc-two"><span>✦</span><div><b>AI Insights</b><small>Ready after scan</small></div></div>
+  </div>
+</section>
+
+<section class="numbers">
+  <div><strong>4+</strong><span>Health parameters</span></div>
+  <div><strong>IoT</strong><span>Sensor-powered</span></div>
+  <div><strong>QR</strong><span>Fast pairing</span></div>
+  <div><strong>24/7</strong><span>Digital history</span></div>
+</section>
+
+<section class="section" id="how">
+  <div class="section-intro reveal">
+    <span class="eyebrow">THE IRYO AI JOURNEY</span>
+    <h2>From <em>scan</em> to insight.</h2>
+    <p>A connected workflow that makes health monitoring organized, quick and easy to understand.</p>
+  </div>
+  <div class="journey">
+    <article class="journey-card reveal"><span class="num">01</span><div class="icon">▣</div><h3>Scan & Pair</h3><p>Scan the QR code and connect your profile with the monitoring device.</p></article>
+    <article class="journey-card reveal"><span class="num">02</span><div class="icon">⌁</div><h3>Monitor</h3><p>Connected IoT sensors capture key readings during a timed scan session.</p></article>
+    <article class="journey-card reveal"><span class="num">03</span><div class="icon">◫</div><h3>View Report</h3><p>See current values, previous results, history and health trends in one dashboard.</p></article>
+    <article class="journey-card reveal"><span class="num">04</span><div class="icon">✦</div><h3>Get AI Insight</h3><p>Receive helpful recommendation-style guidance based on available readings and trends.</p></article>
+  </div>
+</section>
+
+<section class="feature-split section" id="technology">
+  <div class="tech-copy reveal">
+    <span class="eyebrow">SMART HARDWARE</span>
+    <h2>Small device.<br><em>Powerful workflow.</em></h2>
+    <p>IRYO AI uses an ESP32 microcontroller connected with sensors to collect physiological values, perform basic filtering and send processed readings to the backend.</p>
+    <div class="tech-items">
+      <div><span class="tech-icon">01</span><div><b>ESP32</b><small>Microcontroller & connected data flow</small></div></div>
+      <div><span class="tech-icon">02</span><div><b>MAX30102</b><small>Heart rate & SpO₂ sensing</small></div></div>
+      <div><span class="tech-icon">03</span><div><b>Temperature Sensor</b><small>Body temperature measurement</small></div></div>
+      <div><span class="tech-icon">04</span><div><b>Ultrasonic Sensor</b><small>Height estimation</small></div></div>
+    </div>
+  </div>
+  <div class="iot-visual reveal">
+    <div class="scanner-lines"></div>
+    <div class="iot-device">
+      <div class="device-logo">IRYO <b>AI</b></div>
+      <div class="qr"><span>▦</span><small>SCAN TO PAIR</small></div>
+      <div class="device-ready"><i></i> Device ready</div>
+    </div>
+    <span class="tag tag-1">ESP32</span><span class="tag tag-2">MAX30102</span><span class="tag tag-3">TEMP</span>
+  </div>
+</section>
+
+<section class="section dashboard-wrap" id="dashboard">
+  <div class="section-intro reveal">
+    <span class="eyebrow">DIGITAL HEALTH DASHBOARD</span>
+    <h2>Everything in <em>one view.</em></h2>
+    <p>Current readings, history, trends and reports — organized for a clearer experience.</p>
+  </div>
+  <div class="dashboard reveal">
+    <aside>
+      <div class="side-logo">✦ IRYO AI</div>
+      <a class="selected">Overview</a><a>Health Scan</a><a>History</a><a>Reports</a><a>AI Recommendations</a>
+      <div class="side-user"><span>NU</span><div><b>User Profile</b><small>Secure session</small></div></div>
+    </aside>
+    <div class="dash-main">
+      <div class="dash-title"><div><small>YOUR HEALTH SPACE</small><h3>Good morning 👋</h3></div><button>Generate Report ↗</button></div>
+      <div class="metric-cards">
+        <div><span>♥</span><small>Heart Rate</small><strong>76 <i>BPM</i></strong><label>● Stable</label></div>
+        <div><span>◉</span><small>SpO₂</small><strong>98 <i>%</i></strong><label>● Stable</label></div>
+        <div><span>°</span><small>Temperature</small><strong>36.7 <i>°C</i></strong><label>● Normal range</label></div>
+      </div>
+      <div class="chart-panel">
+        <div class="chart-head"><div><b>Health Trend</b><small>Recent scan history</small></div><span>7 DAYS ▾</span></div>
+        <svg class="chart" viewBox="0 0 800 220" preserveAspectRatio="none">
+          <defs><linearGradient id="area" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#3ce1c2" stop-opacity=".25"/><stop offset="1" stop-color="#3ce1c2" stop-opacity="0"/></linearGradient></defs>
+          <path d="M0 155 C65 148 90 80 160 115 S255 180 325 108 S420 62 485 104 S565 145 625 82 S720 110 800 35 L800 220 L0 220Z" fill="url(#area)"/>
+          <path d="M0 155 C65 148 90 80 160 115 S255 180 325 108 S420 62 485 104 S565 145 625 82 S720 110 800 35" fill="none" stroke="#3ce1c2" stroke-width="4"/>
+        </svg>
+        <div class="days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ai-section section">
+  <div class="ai-panel reveal">
+    <div class="ai-glow"></div>
+    <div class="ai-copy">
+      <span class="eyebrow">INTELLIGENT INSIGHTS</span>
+      <h2>Turn readings into <em>understanding.</em></h2>
+      <p>After a monitoring session, IRYO AI can present recommendation-style insights and highlight changes in recorded trends — while keeping the system focused on monitoring rather than medical diagnosis.</p>
+      <a href="#download" class="btn primary">Explore AI Experience →</a>
+    </div>
+    <div class="ai-chat">
+      <div class="chat-head"><span>✦</span><div><b>IRYO AI</b><small>Health insight assistant</small></div><i></i></div>
+      <div class="chat-msg user">My latest scan is complete.</div>
+      <div class="chat-msg bot"><span>✦</span> Your latest readings are ready to review. Compare them with your previous records and monitor any notable changes over time.</div>
+      <div class="chat-input">Ask about your report <span>↑</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section about-section" id="about">
+  <div class="about-card reveal">
+    <span class="eyebrow">OUR VISION</span>
+    <h2>Built as a realistic <em>smart-health prototype.</em></h2>
+    <p>IRYO AI is designed for students, families, clinics, health camps and educational environments, bringing IoT, web technology, digital records and intelligent recommendations into one production-inspired platform.</p>
+    <div class="warning">⚠ IRYO AI is a monitoring and educational prototype. It does not replace professional medical diagnosis or treatment.</div>
+  </div>
+</section>
+
+<section class="download section" id="download">
+  <div class="download-inner reveal">
+    <div><span class="eyebrow">READY TO EXPLORE?</span><h2>Meet your smarter<br><em>health companion.</em></h2><p>Download the IRYO AI project and explore the complete IoT + web experience.</p></div>
+    <div class="download-actions">
+      <a class="btn primary big" href="YOUR_PROJECT_DOWNLOAD_LINK" target="_blank" rel="noopener">Download IRYO AI <span>↓</span></a>
+      <small>Replace the download URL in <b>index.html</b> with your real project/app link.</small>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><a href="#home" class="logo"><span class="logo-icon">✦</span><span>IRYO <b>AI</b></span></a><p>Smart Health Monitoring Platform • IoT + Web + AI</p><span>© 2026 IRYO AI</span></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
